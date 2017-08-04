@@ -12,4 +12,7 @@ public class Reference
 	public static final String MINECRAFT = "[1.12]";
 	
 	public static final String GUI_FACTORY = "arclight.minecraft.ma.config.GuiFactory";
+	
+	public static final String CLIENT_PROXY = "arclight.minecraft.ma.proxy.ClientProxy";
+	public static final String SERVER_PROXY = "arclight.minecraft.ma.proxy.ServerProxy";
 }
