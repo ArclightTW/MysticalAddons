@@ -1,6 +1,9 @@
 package arclight.minecraft.ma.config;
 
-import arclight.minecraft.ma.main.MysticalAddons;
+import java.io.File;
+
+import arclight.minecraft.ma.main.Reference;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -8,17 +11,24 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public class ModConfig
 {
 	public static Configuration config;
-	public static ModConfig instance;
 	
 	@SubscribeEvent
 	public void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent event)
 	{
-		if(!event.getModID().equals(MysticalAddons.MOD_ID))
+		if(!event.getModID().equals(Reference.MOD_ID))
 		{
 			return;
 		}
 		
 		syncConfig();
+	}
+	
+	public static void init(File file)
+	{
+		config = new Configuration(file);
+		syncConfig();
+		
+		MinecraftForge.EVENT_BUS.register(new ModConfig());
 	}
 	
 	public static void syncConfig()
