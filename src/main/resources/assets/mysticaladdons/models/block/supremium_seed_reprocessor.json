@@ -1,0 +1,8 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "mysticaladdons:blocks/supremium_seed_reprocessor_side",
+        "front": "mysticaladdons:blocks/supremium_seed_reprocessor_front",
+        "side": "mysticaladdons:blocks/supremium_seed_reprocessor_side"
+    }
+}

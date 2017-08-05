@@ -6,6 +6,7 @@ import arclight.minecraft.ma.config.ModConfig;
 import arclight.minecraft.ma.handler.GuiHandler;
 import arclight.minecraft.ma.init.ModBlocks;
 import arclight.minecraft.ma.init.ModItems;
+import arclight.minecraft.ma.integration.IntegrationRegistry;
 import arclight.minecraft.ma.main.MysticalAddons;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -27,6 +28,7 @@ public class CommonProxy
 	
 	public void onInitialization(FMLInitializationEvent event)
 	{
+		IntegrationRegistry.instance().init();
 		NetworkRegistry.INSTANCE.registerGuiHandler(MysticalAddons.INSTANCE, new GuiHandler());
 	}
 	

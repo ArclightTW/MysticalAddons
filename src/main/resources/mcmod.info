@@ -1,0 +1,17 @@
+[
+	{
+		"modid"			: "mysticaladdons",
+		"name"			: "Mystical Addons",
+		"description"	: "Adds Higher Tier Things",
+		"version"		: "${version}",
+		"mcversion"		: "${mcversion}",
+		"url"			: "http://github.com/ArclightTW/MysticalAddons",
+		"updateUrl"		: "",
+		"logoFile"		: "",
+		"credits"		: "",
+		"authorList"	:
+		[
+			"ArclightTW"
+		]
+	}
+]

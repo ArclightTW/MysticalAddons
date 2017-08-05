@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "mysticaladdons:intermedium_seed_reprocessor" },
+        "facing=south": { "model": "mysticaladdons:intermedium_seed_reprocessor", "y": 180 },
+        "facing=west":  { "model": "mysticaladdons:intermedium_seed_reprocessor", "y": 270 },
+        "facing=east":  { "model": "mysticaladdons:intermedium_seed_reprocessor", "y": 90 }
+    }
+}

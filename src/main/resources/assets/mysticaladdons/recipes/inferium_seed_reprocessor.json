@@ -1,0 +1,45 @@
+{
+	"type"			: "forge:ore_shaped",
+	"conditions"	:
+	[
+		{
+			"type"		: "minecraft:item_exists",
+			"item"		: "mysticalagriculture:seed_reprocessor"
+		}
+	],
+	"pattern"		:
+	[
+		" I ",
+		"ISI",
+		" B "
+	],
+	"key"	:
+	{
+		"I"	:
+		[
+			{
+				"item"	: "mysticalagriculture:crafting",
+				"data"	: 0
+			}
+		],
+		"S"	:
+		[
+			{
+				"item"	: "mysticalagriculture:seed_reprocessor",
+				"data"	: 0
+			}
+		],
+		"B"	:
+		[
+			{
+				"item"	: "mysticalagriculture:storage",
+				"data"	: 0
+			}
+		]
+	},
+	"result":
+	{
+		"item"	: "mysticaladdons:inferium_seed_reprocessor",
+		"data"	: 0
+	}
+}

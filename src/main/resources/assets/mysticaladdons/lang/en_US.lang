@@ -1,0 +1,32 @@
+# MISC #
+
+itemGroup.tabMysticalAddons=Mystical Addons
+
+# TOOLTIPS #
+
+tooltip.mysticaladdons:efficiency=Efficiency: 
+
+# BLOCKS #
+
+tile.mysticaladdons:inferium_seed_reprocessor.name=§eInferium Seed Reprocessor
+tile.mysticaladdons:prudentium_seed_reprocessor.name=§aPrudentium Seed Reprocessor
+tile.mysticaladdons:intermedium_seed_reprocessor.name=§6Intermedium Seed Reprocessor
+tile.mysticaladdons:superium_seed_reprocessor.name=§bSuperium Seed Reprocessor
+tile.mysticaladdons:supremium_seed_reprocessor.name=§cSupremium Seed Reprocessor
+tile.mysticaladdons:ultimate_seed_reprocessor.name=§8Ultimate Seed Reprocessor
+
+# GUI #
+
+tile.mysticaladdons:inferium_seed_reprocessor.display=Inferium Seed Reprocessor
+tile.mysticaladdons:prudentium_seed_reprocessor.display=Prudentium Seed Reprocessor
+tile.mysticaladdons:intermedium_seed_reprocessor.display=Intermedium Seed Reprocessor
+tile.mysticaladdons:superium_seed_reprocessor.display=Superium Seed Reprocessor
+tile.mysticaladdons:supremium_seed_reprocessor.display=Supremium Seed Reprocessor
+tile.mysticaladdons:ultimate_seed_reprocessor.display=Ultimate Seed Reprocessor
+
+# INTEGRATION #
+
+# Waila
+
+mysticaladdons:integration.waila.input=Input: %s
+mysticaladdons:integration.waila.output=Output: %s

@@ -1,0 +1,81 @@
+buildscript
+{
+	repositories
+	{
+		jcenter()
+		
+		maven
+		{
+			url = "http://files.minecraftforge.net/maven"
+		}
+	}
+	
+	dependencies
+	{
+		classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+	}
+}
+
+apply plugin: 'net.minecraftforge.gradle.forge'
+
+version = "${version}"
+group="arclight.minecraft.ma"
+archivesBaseName="MysticalAddons"
+
+sourceCompatibility = targetCompatibility = "1.6"
+
+compileJava
+{
+	sourceCompatibility = targetCompatibility = "1.8"
+}
+
+minecraft
+{
+	runDir = "run"
+	mappings = "${mappings_version}"
+	version = "${mc_version}-${forge_version}"
+	replaceIn "${mod_info_path}"
+	
+	replace "%VERSION%", "${version}"
+	replace "%FORGE_VERSION%", "${forge_version}"
+}
+
+display_version = "${display_version}" ?: "${mcversion}"
+version = "${display_version}-${mod_version}"
+
+repositories
+{
+	maven
+	{
+		url = "http://tehnut.info/maven"
+	}
+	
+	flatDir
+	{
+		dirs 'libs'
+	}
+}
+
+dependencies
+{
+	compile name: 'Chameleon-1.12-4.1.2'
+	
+	deobfCompile "mcp.mobius.waila:Hwyla:1.8.19-B33_1.12"
+}
+
+processResources
+{
+	inputs.property "version", project.version
+	inputs.property "mcversion", project.minecraft.version
+	
+	from(sourceSets.main.resources.srcDirs)
+	{
+		include 'mcmod.info'
+		expand 'version':project.version, 'mcversion':project.minecraft.version
+	}
+	
+	from(sourceSets.main.resources.srcDirs)
+	{
+		exclude 'mcmod.info'
+	}
+}

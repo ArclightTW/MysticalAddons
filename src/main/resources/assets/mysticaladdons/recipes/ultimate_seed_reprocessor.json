@@ -1,0 +1,52 @@
+{
+	"type"			: "forge:ore_shaped",
+	"conditions"	:
+	[
+		{
+			"type"		: "minecraft:item_exists",
+			"item"		: "mysticalagriculture:seed_reprocessor"
+		}
+	],
+	"pattern"		:
+	[
+		"WNW",
+		"BSB",
+		"WBW"
+	],
+	"key"	:
+	{
+		"W"	:
+		[
+			{
+				"item"	: "minecraft:skull",
+				"data"	: 1
+			}
+		],
+		"N"	:
+		[
+			{
+				"item"	: "minecraft:nether_star",
+				"data"	: 0
+			}
+		],
+		"B"	:
+		[
+			{
+				"item"	: "mysticalagriculture:storage",
+				"data"	: 4
+			}
+		],
+		"S"	:
+		[
+			{
+				"item"	: "mysticaladdons:supremium_seed_reprocessor",
+				"data"	: 0
+			}
+		]
+	},
+	"result":
+	{
+		"item"	: "mysticaladdons:ultimate_seed_reprocessor",
+		"data"	: 0
+	}
+}
